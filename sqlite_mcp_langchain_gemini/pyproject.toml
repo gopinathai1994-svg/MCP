@@ -1,0 +1,23 @@
+[project]
+name = "sqlite-mcp-langchain-gemini"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "bilal", email = "a2ztechians@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-google-genai>=4.4.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "langgraph>=1.2.19",
+    "mcp>=1.30.0",
+]
+
+[project.scripts]
+sqlite-mcp-langchain-gemini = "sqlite_mcp_langchain_gemini:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
